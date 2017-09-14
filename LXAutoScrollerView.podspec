@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint LXAutoScrollerView.podspec.podspec' to ensure this is a
+#  Be sure to run `pod spec lint LXAutoScrollerView.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "LXAutoScrollerView.podspec"
+  s.name         = "LXAutoScrollerView"
   s.version      = "0.0.1"
   s.summary      = "无限轮播器"
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    对UISCrollerView进行封装，让无限轮播变得更简单。。
+                      对UIScrollerView进行封装，无限轮播更简单
                    DESC
 
   s.homepage     = "https://github.com/DarcyYangjie/LXAutoScrollerView"
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "LXAutoScrollerView/**/*.{h,m}"
-  #s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -133,6 +133,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   s.dependency "SDWebImage", "~> 4.0.0"
+  s.dependency "SDWebImage", "~> 4.0.0"
 
 end
