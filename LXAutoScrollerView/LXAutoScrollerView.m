@@ -107,9 +107,14 @@
 
 - (void)setSubArray:(NSArray *)subArray{
     _subArray = subArray;
-
+    
+    for (UIView *view in self.subviews) {
+        [view removeFromSuperview];
+    }
+    
     [self layoutIfNeeded];
-    NSAssert(self.bounds.size.width > 0 && self.bounds.size.height > 0, @"在设置内容视图前需要先布局或者是设置frame");
+    
+    NSAssert((self.bounds.size.width > 0 && self.bounds.size.height > 0) && self.direction > 0, @"在设置内容视图前需要先布局或者是设置frame以及设置方向");
     
     self.maxTAG = subArray.count;
     
